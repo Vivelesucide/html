@@ -64,14 +64,44 @@ function bark (name , weight)  {
 
   }
 
-  var person =['eiyo','hei']
-  var i;
-  i=Math.floor(Math.random()*arr.length)
-  person[i]
-  document.write(person[i]+'there')
+
+
+  var person =['zyc ','sjy ','kris ','little wu ']
+  var ground =['school ','home ','bathroom ',' bedroom']
+  var thing =['take lunch',' study','suck a thing',' sleep']
+
+  function foo (arr){
+    console.log(arr)
+  }
+
+  foo(person)
+  var p,g,t
+  p=Math.floor(Math.random()*person.length)
+  g=Math.floor(Math.random()*ground.length)
+  t=Math.floor(Math.random()*thing.length)
+  
+  
+  document.write(person[p]+'there '+ground[g]+thing[t])
   
 
-  
+
+  var car ={
+    color: 'red',
+    energy : 40,
+    speed:120,
+    stop:function(){
+      this.speed=0
+    }
+  }
+
+  car.stop()
+
+  document.write(car.speed)
+
+  car.stop() 
+  document.write('<br>')
+  document.getElementById('headText')
+
 
 </script>
 </body>
